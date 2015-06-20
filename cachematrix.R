@@ -1,7 +1,7 @@
 ## This is a set of functions that will allow you to generate and cache the inverse
 ## of a matrix.
 
-## The makeChacheMatrix creates a set of functions to be used in the cacheSolve function
+## The makeChacheMatrix creates a set of functions stored as a list object to be used in the cacheSolve function
 ## for the creating and storing of the inverse of a matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The cacheSolve function takes a list of makeCacheMatrix functions and either returns the cached
+## The cacheSolve function takes a makeCacheMatrix object as a parameter and either returns the cached
 ## inverse of a matrix or generates the inverse of the matrix if it is not cached.
 
 cacheSolve <- function(x, ...) {
